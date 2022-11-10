@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/DAT MUSIC.png"/>
+    <title>DATMUSIC</title>
+    <link rel="stylesheet" href="css/music.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap-grid.min.css" integrity="sha512-a+PObWRxNVh4HZR9wijCGj84JgJ/QhZ8dET09REfYz2clUBjKYhGbOmdy9KEHilYKgbMSIHNQEsonv/r75mHXw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <script src="https://kit.fontawesome.com/1806f43bcd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="formtong">
+            <div class="form--logo">
+                <a href="index.html">
+                    <img class="form--logo_img" src="img/DAT MUSIC.png" style="max-width:110px">
+                </a>
+            </div>
+            <div class="form--login">
+                <input type="text" class="thanhtim" placeholder="   Tìm Kím Bài Hát...">
+                <button type="submit" class="timkiem">
+                    <i class="fa-brands fa-searchengin"></i>
+                </button>
+            </div>
+            <div class="form--gioithieu">
+                <ul>
+                    <li>
+                        <a href="">Top DJ</a>
+                    </li>
+                    <li>
+                        <a href="">Nonstop Mới Nhất</a>
+                    </li>
+                    <li>
+                        <a href="">Nonstop</a>
+                    </li>
+                    <li>
+                        <a href="#music_phobien">Nhạc Phổ Biến</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="quanlytong">
+            <div class="quanlytong_list">
+                <h1>Playlist</h1>
+                <div class="quanglytong_list--danhsach">
+                    <h4 class="music"><span></span><i class="fa-solid fa-music"></i>Nhạc Yêu Thích</h4>
+                    <h4><span></span><i class="fa-solid fa-music"></i>Nhạc Đã Lưu</h4>
+                    <h4><span></span><i class="fa-solid fa-music"></i>Nhạc Đã Nghe Gần Đây</h4>
+                </div>
+                <div class="quanlytong_music">
+                    <li class="musiclist_list">
+                        <span>01</span>
+                        <img src="img/datbear.jpg" alt="">
+                        <h5>
+                            Trọn Nghĩa Vẹn Tình
+                            <div class="musiclist_list--namemusic">Đạt Bear Remix</div>
+                            <i class="fa-solid fa-circle-play"  id="1"></i>
+                        </h5>
+                    </li>
+                    <li class="musiclist_list">
+                        <span>02</span>
+                        <img src="img/tongphu.jpg" alt="">
+                        <h5>
+                            Tòng Phu
+                            <div class="musiclist_list--namemusic">Đạt Bear Remix</div>
+                            <i class="fa-solid fa-circle-play"  id="1"></i>
+                        </h5>
+                    </li>
+                    <li class="musiclist_list">
+                        <span>03</span>
+                        <img src="img/solam2.jpg" alt="">
+                        <h5>
+                            Sợ Lắm 2
+                            <div class="musiclist_list--namemusic">Đạt Bear Remix</div>
+                            <i class="fa-solid fa-circle-play"  id="1"></i>
+                        </h5>
+                    </li>
+                    <!-- <li class="musiclist_list">
+                        <span>04</span>
+                        <img src="img/datbear.jpg" alt="">
+                        <h5>
+                            Thời Gian Sẽ Trả Lời
+                            <div class="musiclist_list--namemusic">Đạt Bear Remix</div>
+                            <i class="fa-solid fa-circle-play"  id="1"></i>
+                        </h5>
+                    </li>
+                    <li class="musiclist_list">
+                        <span>05</span>
+                        <img src="img/emvediem.jpg" alt="">
+                        <h5>
+                            Em Về Đi Em
+                            <div class="musiclist_list--namemusic">Đạt Bear Remix</div>
+                            <i class="fa-solid fa-circle-play"  id="1"></i>
+                        </h5>
+                    </li>
+                    <li class="musiclist_list">
+                        <span>06</span>
+                        <img src="img/thaihoang.jpg" alt="">
+                        <h5>
+                            Let Me See
+                            <div class="musiclist_list--namemusic">Thái Hoàng Remix</div>
+                            <i class="fa-solid fa-circle-play"  id="1"></i>
+                        </h5>
+                    </li> -->
+                </div>
+            </div>
+            <div class="quanlytong_musiclist">
+                <div class="mySlides fade">
+                    <img src="img/th.png" alt="DJ Thái Hoàng" style="width: 90%;">
+                </div>
+                <div class="mySlides fade">
+                    <img src="img/vavh.png" alt="DJ Thái Hoàng" style="width: 90%;">
+                </div>
+                <div class="mySlides fade">
+                    <img src="img/bao.png" alt="DJ Thái Hoàng" style="width: 90%;">
+                </div>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(0)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+                <script src="js/main.js"></script>
+
+                <div id="music_phobien">
+                    <div class="music_phobien_tieude">
+                        <h1>Nhạc Phổ Biến</h1>
+                        <div class="music_phobien_tieude--dieukhien">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="list_song">
+                        <li class="list_song_music">
+                            <div class="list_song_music--img">
+                                <img src="img/datbear.jpg" alt="datbear">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script src="js/main.js"></script>
+    <footer>
+        <div class="songmusic">
+            <div class="songmusic_song1"></div>
+            <div class="songmusic_song1"></div>
+            <div class="songmusic_song1"></div>
+        </div>
+        <img src="img/datbear.jpg" alt="Dat Bear">
+        <h5>
+            Trọn Nghĩa Vẹn Tình
+            <div class="musiclist_list--namemusic">Đạt Bear Remix</div>
+        </h5>
+        <div class="songmusic__luachon">
+            <i class="fa-solid fa-backward-step"></i>
+            <i class="fa-solid fa-play"></i>
+            <i class="fa-solid fa-forward-step"></i>
+        </div>
+        <span id="currentstart">0:00</span>
+        <div class="timemusic">
+            <input type="range" id="seek"  min="0" max="100" value="0">
+            <div class="bar2" id="bar2"></div>
+            <div class="dot"></div>
+        </div>
+        <span id="currentend">0:00</span>
+
+        <div class="vol">
+            <i class="fa-solid fa-volume-high"></i>
+            <input type="range" id="vol"  min="0" max="100" value="30">
+            <div class="vol_bar"></div>
+            <div class="dot" id="vol_dot"></div>
+        </div>
+    </footer>
+</body>
+</html>
